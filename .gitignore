@@ -1,0 +1,53 @@
+# Môi trường ảo Python
+.venv/
+env/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+
+# File trọng số mô hình lớn (>100MB, không đẩy lên Git)
+*.pt
+*.pth
+*.bin
+*.onnx
+weights/*.pt
+weights/*.pth
+!weights/.gitkeep
+
+# Thư mục huấn luyện, nháp và dữ liệu lớn
+runs/
+scratch/
+data/dataset/
+data/dataset_tusimple/
+*.zip
+*.tar.gz
+
+# Thư mục tài liệu báo cáo riêng
+baocao/
+docs/
+
+# Kết quả đầu ra (không đẩy lên Git)
+results/images/*
+results/videos/*
+!results/images/.gitkeep
+!results/videos/.gitkeep
+
+# Cấu hình IDE & Hệ điều hành
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Đóng gói phân phối
+*.egg-info/
+dist/
+build/
